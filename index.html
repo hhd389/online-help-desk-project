@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./theme/style.css" type="text/css">
 </head>
 <body>
+    <div class="sticky-fixed">
+        <div class="menu-close">
+           <i class="fas fa-times"></i>
+        </div>
+    </div>
     <div class="header-top-area">
         <div class="container">
             <a href="" class="head-login"><i class="fa fa-sign-in-alt"></i>Login</a>
@@ -20,8 +25,19 @@
             <nav>
                 <div class="logo"><img src="./images/logo.png" alt=""></div>
                 <ul class="navbar">
+                    <li class="navbar-item has-sub">
+                        <a class="navbar-link">Profile <i class="fas fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">View Profile</a>
+                            </li>
+                            <li>
+                                <a href="">Created request</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link active">Home</a>
+                        <a href="#" class="navbar-link">Home</a>
                     </li>
                     <li class="navbar-item">
                         <a href="" class="navbar-link">About</a>
