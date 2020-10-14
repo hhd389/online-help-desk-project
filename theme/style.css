@@ -1,3 +1,7 @@
+/* Css write by Hua Hoang Duy
+    Started date : 12//10/2020
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -59,6 +63,29 @@ body{
 }
 header{
     width: 100%;
+    background: var(--main-background);
+    padding: 0 10px;
+    padding-top: 10px;
+    transition: all 0.4s ease;
+}
+.scrolling{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    background: var(--main-background);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    animation: sticky 0.5s ease-in;
+}
+@keyframes sticky{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
 .header-container{
     width: 100%;
@@ -128,6 +155,96 @@ nav{
     cursor: pointer;
     opacity: 0.7;
     box-shadow: 10x 15px black;
+}
+.menu{
+    display: none;
+}
+/* ====== responsive for header =======*/
+@media only screen and (max-width: 600px){
+    .logo img{
+        width: 80px;
+    }
+    .banner{
+        display: none;
+    }
+    .navbar{
+        position: fixed;
+        background: var(--second-background);
+        width: 250px;
+        transform: translateX(-255px);
+        height: 100%;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        box-shadow: 5px 15px 5px rgba(138, 138, 138, 0.2);
+        flex-direction: column;
+        padding-top: 80px;
+        text-align: center;
+        font-size: 20px;
+        transition: transform 0.5s ease;
+    }
+    .navbar-expand .navbar{
+        transform: translateX(0);
+    }
+    .navbar-item{
+        display: block;
+        margin: 20px 0;
+    }
+    .navbar-link{
+        display: block;
+        color: #fff;
+    }
+    .navbar-link.active{
+        color: #fff;
+    }
+    .navbar-link:hover{
+        color: rgb(136, 136, 136);
+    }
+    .menu{
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .menu span{
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: var(--second-background);
+        position: relative;
+        transition: background 0.4s ease;
+    }
+    .menu span::before{
+        content: '';
+        position: absolute;
+        display: block;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--second-background);
+    }
+    .menu span::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: var(--second-background);
+        top: 10px;
+    }
+    .navbar-expand .menu span{
+        background: transparent;
+    }
+    .navbar-expand .menu span::before, .navbar-expand .menu span::after{
+        top: 0;
+        transition: transform 0.4s ease;
+    }
+    .navbar-expand .menu span::before{
+        transform: rotate(45deg);
+    }
+    .navbar-expand .menu span::after{
+        transform: rotate(-45deg);
+    }
 }
 /* ==== footer === */
 .footer{

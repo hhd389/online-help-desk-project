@@ -18,3 +18,16 @@ function moveSlides(){
 }
 setInterval(moveSlides,4000);
 console.log(maxSlide);
+
+// expand navbar
+const menu = document.querySelector('.menu');
+menu.addEventListener('click',() => {
+    document.body.classList.toggle('navbar-expand');
+});
+
+// scrolling fixed header
+window.addEventListener('scroll',function(){
+    let header = document.querySelector('header');
+    let wp = window.scrollY > 200;
+    header.classList.toggle('scrolling',wp);
+});
