@@ -631,7 +631,7 @@ nav{
 }
 /* ========= ribbon =========== */
 .label-head{
-    background-image: -webkit-linear-gradient(top, rgb(255, 74, 74), #ffad50);
+    background-image: -webkit-linear-gradient(top, rgb(255, 74, 74), #e92560);
     background-color: var(--danger-color);
     height: 1.12rem;
     width: 100%;
@@ -641,7 +641,7 @@ nav{
 }
 .label-head-1{
     background-image: -webkit-linear-gradient(top, rgb(48, 219, 76), #0bb397);
-    background-color: var(--success-color);
+    background-color: var(--danger-color);
     height: 1.12rem;
     width: 100%;
     position: relative;
@@ -650,12 +650,25 @@ nav{
 }
 .label-head-2{
     background-image: -webkit-linear-gradient(top, rgb(79, 135, 255), #943cf8);
+    background-color: var(--success-color);
+    height: 1.12rem;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: -5px;
+}
+.label-head-3{
+    background-image: -webkit-linear-gradient(top, rgb(255, 147, 46), #d61515);
     background-color: var(--warning-color);
     height: 1.12rem;
     width: 100%;
     position: relative;
     border-radius: 10px;
     margin-bottom: -5px;
+}
+.div-relative{
+    position: relative;
+    margin-top: 50px;
 }
 .category{
     position: absolute;
@@ -686,6 +699,9 @@ nav{
 .list-category > .list-item:hover{
     background: #eee;
     color: var(--main-color);
+}
+.float-right{
+    float: right;
 }
 .ribbon{
     width: 150px;
@@ -777,14 +793,45 @@ nav{
 }
 .footer{
     width: 100%;
-    background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+    background: rgb(18, 24, 39);
     color: #fff;
-    padding: 40px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-top: 50px;
 }
+.footer a{
+    color: #fff;
+}
 .footer-container{
-    max-width: 1240px;
+    max-width: 1024px;
     margin: 0 auto;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-container > div{
+    width: 40%;
+    margin-bottom: 40px;
+}
+.footer-col > h2{
+    margin-bottom: 10px;
+    color: rgb(204, 149, 112);
+    text-transform: uppercase;
+}
+.footer-col > p{
+    margin-bottom: 5px;
+}
+.footer-col > p > i{
+    padding-right: 5px;
+}
+.footer-full{
     text-align: center;
+}
+@media (max-width: 600px){
+    .footer-col{
+        width: 100% !important;
+    }
 }
