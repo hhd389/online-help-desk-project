@@ -28,7 +28,7 @@ menu.addEventListener('click',() => {
 // scrolling fixed header
 window.addEventListener('scroll',function(){
     let header = document.querySelector('header');
-    let wp = window.scrollY > 200;
+    let wp = window.scrollY > 150;
     header.classList.toggle('scrolling',wp);
 });
 // close navbar
