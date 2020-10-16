@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
 }
@@ -102,4 +102,10 @@ body{
 .end{
     color: #217298;
     font-size: 13px;
+}
+.error{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fe4d2e;
+    text-align: center;
 }

@@ -702,6 +702,7 @@ nav{
 }
 .float-right{
     float: right;
+    font-size: 14px;
 }
 .ribbon{
     width: 150px;
@@ -833,5 +834,8 @@ nav{
 @media (max-width: 600px){
     .footer-col{
         width: 100% !important;
+    }
+    .slides{
+        display: none;
     }
 }

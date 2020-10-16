@@ -49,7 +49,7 @@ const navItem = document.querySelectorAll('.has-sub');
 navItem.forEach(item => {
     item.addEventListener('click',(e) => {
         //alert("hey, you just clicked me ");
-        console.log(item.children[1]);
+        //console.log(item.children[1]);
         if(item.children[1].hasChildNodes)
         {
             item.children[0].firstElementChild.classList.toggle('fa-angle-left');
