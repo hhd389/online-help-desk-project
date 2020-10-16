@@ -4,7 +4,9 @@ var maxSlide = slides.length;
 slides.forEach(item => {
     item.style.display = "none";
 });
-slides[0].style.display = "block";
+if(slides[0]){
+    slides[0].style.display = "block";
+}
 function moveSlides(){
     //console.log(slides[count]);
     count++;
@@ -16,7 +18,9 @@ function moveSlides(){
     });
     slides[count].style.display = "block";
 }
-setInterval(moveSlides,4000);
+if(maxSlide != 0){
+    setInterval(moveSlides,4000);
+}
 console.log(maxSlide);
 
 // expand navbar
