@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Help Desk Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="./theme/style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="sticky-fixed">
+        <div class="menu-close">
+           <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <div class="header-top-area">
+        <div class="container">
+            <a href="" class="head-login"><i class="fa fa-sign-in-alt"></i>Login</a>
+            <a href="" class="head-register"><i class="fa fa-user-alt"></i>Register</a>
+        </div>
+    </div>
+    <header>
+        <div class="header-container">
+            <nav>
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
+                <ul class="navbar">
+                    <div class="logo-sm">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <li class="navbar-item has-sub">
+                        <a class="navbar-link">Profile <i class="fas fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="">View Profile</a>
+                            </li>
+                            <li>
+                                <a href="">Your requirements</a>
+                            </li>
+                            <li>
+                                <a href="">Notification
+                                    <span class="badget danger-color">22</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Message 
+                                    <span class="badget">22</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">Contact</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-link">Help</a>
+                    </li>
+                </ul>
+                <div class="banner">
+                    <img src="./images/banner.png" alt="">
+                </div>
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="background-black">
+            <div class="background-overlay"></div>
+            <div class="container">
+                <div class="background-title">
+                    <h2>My Request</h2>
+                    <p>
+                        <a href="">Home</a> / <a href="">My Request</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6" style="margin-top:10px">
+                    <a href="" class="btn-create">Create request</a>
+                </div>
+                <div class="col-6 col-sm-6">
+                    <div class="filter">
+                        <p>Filter</p>
+                        <select name="filter" id="filter" class="form-control-select">
+                            <option value="">Open</option>
+                            <option value="">Close</option>
+                            <option value="">Work-in-progress</option>
+                            <option value="">Need more info</option>
+                            <option value="">Rejected</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header"><h3>My list of requests</h3></div>
+                        <div class="card-content">
+                            <table class="table-re">
+                                <thead>
+                                    <th>Title</th>
+                                    <th>Facility</th>
+                                    <th>Status</th>
+                                    <th>Created date</th>
+                                    <th>Operation</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="">Feedback about eviroment around school</a></td>
+                                        <td>Toilet</td>
+                                        <td>
+                                            <span class="dot"><i class="danger-color"></i> Completed</span>
+                                        </td>
+                                        <td>20/10/2020</td>
+                                        <td>
+                                            <a href="" class="btn-circle warning-color"><i class="fas fa-eye"></i></a>
+                                            <a href="" class="btn-circle danger-color"><i class="fas fa-lock"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feedback about eviroment around school</td>
+                                        <td>Toilet</td>
+                                        <td>
+                                            <span class="dot"><i></i> Completed</span>
+                                        </td>
+                                        <td>20/10/2020</td>
+                                        <td>
+                                            <a href="" class="btn-circle warning-color"><i class="fas fa-eye"></i></a>
+                                            <a href="" class="btn-circle danger-color"><i class="fas fa-lock"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feedback about eviroment around school</td>
+                                        <td>Toilet</td>
+                                        <td>
+                                            <span class="dot"><i></i> Completed</span>
+                                        </td>
+                                        <td>20/10/2020</td>
+                                        <td>
+                                            <a href="" class="btn-circle warning-color"><i class="fas fa-eye"></i></a>
+                                            <a href="" class="btn-circle danger-color"><i class="fas fa-lock"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="duy"><i class="fas fa-angle-up"></i></div>
+    <script type="text/javascript">
+        $(document).ready(function(){ 
+     
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.duy').fadeIn();
+                } else {
+                    $('.duy').fadeOut();
+                }
+            }); 
+     
+            $('.duy').click(function(){
+                $("html, body").animate({ scrollTop: 0 }, 800);
+            });
+     
+        });
+    </script>
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+             <div class="footer-col">
+                 <h2 class="footer-title">address</h2>
+                 <p><i class="fas fa-map-marker-alt"></i> 01 Ly Tu Trong, Ninh Kieu District, Can Tho City, Vietnam.</p>
+             </div>
+             <!-- footer col -->
+             <div class="footer-col">
+                <h2 class="footer-title">RESPONSIBLE FOR THE CONTENT</h2>
+                <p><i class="fas fa-signature"></i> Mr. Gia Bao Ngo</p>
+                <p><i class="fas fa-signature"></i> Mr. Thanh Duy Tran Ho</p>
+                <p><i class="fas fa-signature"></i> Mr. Duy Hoang Hua</p>
+            </div>
+            <!-- footer col -->
+            <div class="footer-col">
+                <h2 class="footer-title">HOTLINE</h2>
+                <p>
+                    <i class="fas fa-phone-volume"></i> +84 292 383 5581
+                </p>
+            </div>
+            <!-- footer col -->
+            <div class="footer-col">
+                <h2 class="footer-title">EMAIL</h2>
+                <p>
+                    <i class="far fa-envelope"></i> <a href="mailto:cusc@ctu.edu.vn">cusc@ctu.edu.vn</a>
+                </p>
+            </div>
+            <!-- footer col -->
+            </div>
+            <div class="footer-full">
+                © Can Tho University Software Center
+            </div>
+            <!-- container -->
+        </div>
+        <!-- footer -->
+    </footer>
+    <!-- end footer -->
+    <script src="./js/app.js"></script>
+</body>
+</html>

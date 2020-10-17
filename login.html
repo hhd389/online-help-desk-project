@@ -11,6 +11,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="logo">
+            <a href=""><img src="./images/logo.png" alt=""></a>
+        </div>
         <div class="form-login">
             <form action="" method="post">
                 <p class="title-login center">ONLINE HELP DESK</p>
@@ -20,19 +23,43 @@
                 </div>
                 <div class="form-field">
                     <input type="text" name="" class="input">
-                    <label for="">Email</label>
+                    <label for="">Username</label>
                 </div>
                 <div class="form-field">
                     <input type="password" name="" id="" class="input">
                     <label for="">Password</label>
                 </div>
                 <div class="form-field">
-                    <button type="submit">Login</button>
+                    <button type="submit">Sign in</button>
+                </div>
+                <div class="form-field cusc-text">
+                    New to CUSC ? <a href="">Create an account.</a>
+                    <p><a href="" id="forgot">Forgot password ?</a></p>
                 </div>
                 <div class="center end">
                     2020 © All rights reserved
                 </div>
             </form>
+        </div>
+    </div>
+    <div class="feedback-container">
+        <div class="feedback-fixed">
+            <form>
+			<div class="feedback-title">Reset your password</div>
+            <div class="feedback-txt">
+                <p>Enter your user account's verified email address and we will send you a password reset link.
+                </p>
+                <input type="text" name="" placeholder="Enter your email address">
+            </div>
+            <div class="feedback-submit">
+                <button type="submit">Send password reset email</button>
+            </div>
+            <a href="" class="close"><i class="fas fa-times"></i></a>
+			</form>
+        </div>
+        <div class="sign-owner">
+            <p>Design by</p>
+            <img src="./images/duy.png" alt="">
         </div>
     </div>
     <script src="./js/login.js"></script>
