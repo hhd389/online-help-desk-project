@@ -784,6 +784,7 @@ nav{
 /* ========== profile css ================== */
 .profile-container{
     width: 100%;
+    margin-top: 10px;
 }
 .avatar-profile{
     width: 100%;
@@ -938,8 +939,152 @@ table{
     border-radius: 5px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
+.form-control{
+    width: 100%;
+    max-width: 99%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    outline-color: royalblue;
+    outline-width: 2px;
+}
+.form-field{
+    width: 100%;
+    margin: 10px 0;
+}
+.form-field > p{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
 select{
     cursor: pointer;
+}
+.btn{
+    display: inline-block;
+    padding: 7px 9px;
+    border: 1px solid #888;
+    background: rgb(35, 137, 233);
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    transition: background 0.4s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background: rgb(16, 69, 119);
+    color: #fff;
+    border-color: #fff;
+}
+.btn-default{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+.btn-green{
+    background: #4cae4c;
+    border-color: #4cae4c;
+    color: #fff;
+}
+.btn-green i{
+    margin-right: 3px;
+}
+.btn-green:hover{
+    background: #337a33;
+    color: #fff;
+    border-color: #163516;
+}
+.title-highlight{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 35px;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.title-highlight::after{
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(/images/slash.svg) no-repeat;
+    height: 20px;
+    width: 100%;
+}
+.list{
+    width: 100%;
+}
+.list-item-alt{
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+    display: block;
+    transition: background 0.3s ease-in-out;
+}
+
+.list-item-alt:hover{
+    background: #eee;
+}
+.list-item-alt > p{
+    font-size: 12px;
+    color: #555;
+    text-align: right;
+}
+/* ============== css for request ================ */
+.facility{
+    width: 100%;
+}
+.facility > span{
+    background: var(--danger-color);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.request-container{
+    width: 100%;
+    background: var(--main-background);
+}
+.request-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(43, 142, 223);
+    font-weight: 600;
+}
+.request-info{
+    display: flex;
+    justify-content: space-between;
+}
+.request-content{
+    width: 100%;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.request-status{
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 10px;
+}
+.request-status > p{
+    display: inline-block;
+    text-align: left;
+}
+.request-status > span{
+    float: right;
+}
+.request-remark{
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
 }
 /* ==== footer === */
 .background-black{
@@ -969,6 +1114,7 @@ select{
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
+    align-items: center;
 }
 .background-title > h2{
     font-size: 33px;
@@ -1042,5 +1188,12 @@ select{
     }
     .row-reverse{
         flex-direction: column-reverse;
+    }
+    .form-control-select{
+        width: 100%;
+    }
+    .avatar-profile > img{
+        width: 5rem;
+        height: 5rem;
     }
 }

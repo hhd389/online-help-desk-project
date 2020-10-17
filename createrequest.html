@@ -77,61 +77,56 @@
             <div class="background-overlay"></div>
             <div class="container">
                 <div class="background-title">
-                    <h2>Feedback about enviroment to admin</h2>
+                    <h2>Create new request</h2>
                     <p>
-                        <a href="">Home</a> / <a href="">View Request</a>
+                        <a href="">Home</a> / <a href="">Create Request</a>
                     </p>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="row row-reverse">
-                <div class="col-8 col-m-8">
-                    <div class="request-container">
-                        <div class="request-title">
-                            Feedback about enviroment to admin
+            <div class="row">
+                <div class="col-12">
+                    <form action="" method="post">
+                        <div class="form-field">
+                            <p>Title</p>
+                            <input type="text" class="form-control" placeholder="Enter title">
                         </div>
-                        <div class="request-info">
-                            <p>by <a href="">huahoangduy</a></p>
-                            <p><i class="fas fa-calendar-alt"></i> 17/10/2020</p>
+                        <div class="form-field">
+                            <p>Description</p>
+                            <textarea name="" id="" rows="10" class="form-control"></textarea>
                         </div>
-                        <div class="request-content">
-                            <div class="facility">
-                                <span>Cantin</span>
-                            </div>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, nisi. Incidunt ducimus nesciunt id officia voluptatem maiores, quidem atque dolore aut dicta sint natus quaerat labore eaque rem voluptatibus optio.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 col-m-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Request Status</h3>
-                        </div>
-                        <div class="card-content">
-                            <div class="request-status">
-                                <p><i class="fas fa-plus-circle"></i> 17/10/2020</p>
-                                <span class="dot"><i class="primary-color"></i> Pending</span>
-                            </div>
-                            <!-- request status -->
-                            <div class="request-status">
-                                <p><i class="fas fa-plus-circle"></i> 18/10/2020</p>
-                                <span class="dot"><i class="warning-color"></i> Need more info</span>
-                                <div class="request-remark">
-                                    (We need more info)
+                        <div class="form-field">
+                            <div class="row">
+                                <div class="col-6 col-m-6">
+                                    <b>Choose facility</b>
+                                    <select name="" id="" class="form-control-select">
+                                        <option value="">Class-rooms</option>
+                                        <option value="">Labs</option>
+                                        <option value="">Hostels</option>
+                                        <option value="">Canteen</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 col-m-6">
+                                    <b>Severity of the request</b>
+                                    <select name="" id="" class="form-control-select">
+                                        <option value="">Low</option>
+                                        <option value="">Normal</option>
+                                        <option value="">Critical</option>
+                                        <option value="">Emergency</option>
+                                    </select>
                                 </div>
                             </div>
-                            <!-- request status -->
-                            <div class="request-status">
-                                <p><i class="fas fa-plus-circle"></i> 17/10/2020</p>
-                                <span class="dot"><i class="success-color"></i> Completed</span>
-                            </div>
-                            <!-- request status -->
                         </div>
-                    </div>
-                    <!-- card div -->
+                        <!-- end form field -->
+                        <div class="form-field" style="text-align:center;">
+                            <button type="submit" class="btn" style="width:50%">Create request</button>
+                        </div>
+                    </form>
                 </div>
+                <!-- end col 12 -->
             </div>
+            <!-- end row -->
         </div>
     </div>
     <div class="duy"><i class="fas fa-angle-up"></i></div>
