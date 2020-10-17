@@ -1019,7 +1019,7 @@ select{
     position: absolute;
     content: '';
     display: block;
-    background: url(/images/slash.svg) no-repeat;
+    background: url('/images/slash.svg') no-repeat;
     height: 20px;
     width: 100%;
 }
@@ -1085,6 +1085,259 @@ select{
     font-size: 14px;
     color: red;
     margin-top: 5px;
+}
+/* mail css */
+.mail-container{
+    width: 100%;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+.mail-welcome{
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.mail-form{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+.mail-form input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+}
+.mail-form button{
+    display: block;
+    width: 50%;
+    padding: 10px 0;
+    background-color: rgb(69, 153, 209);
+    border: 1px solid transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px auto;
+    transition: all 0.5s ease;
+}
+.mail-form button:hover{
+    background-color: rgb(28, 65, 90);
+}
+.mail-warning{
+    color: red;
+    margin-bottom: 15px;
+    background-color: rgb(255, 189, 189);
+    max-width: 1280px;
+    text-align:center;
+    padding: 7px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+.mail-list{
+    width: 100%;
+}
+.mail-list > div{
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+.mail-from{
+    display: flex;
+    justify-content: space-between;
+}
+.mail-from > .mail-avatar{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+.mail-avatar > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mail-avatar > a > span{
+    font-weight: 600;
+    font-size: 16px;
+}
+.mail-avatar > a > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.mail-from > .mail-content{
+    width: calc(100% - 60px);
+}
+.mail-from > .mail-content > .mail-msg{
+    background-color: #0099ff;
+	color: #fff;
+    padding: 10px 15px;
+    border-radius: 40px;
+    float: left;
+    font-size: 14px;
+    line-height: 1.5;
+	min-height: 22px;
+	min-width: 14px;
+}
+.mail-from > .mail-content > .mail-msg > p{
+    width: 100%;
+    float: left;
+    font-weight: 600;
+}
+.mail-from > .mail-content > .mail-msg > p > a{
+	color: #fff;
+}
+.mail-from > .mail-content > .mail-msg > p > a:hover{
+	text-decoration: underline;
+}
+.mail-from > .mail-content > .mail-times{
+    clear: both;
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+}
+.mail-to{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+.mail-to > .mail-content{
+    width: calc(100% - 60px);
+}
+.mail-to > .mail-content > .mail-msg{
+    background-color: #f1f0f0;
+    padding: 10px 15px;
+    border-radius: 40px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.5;
+    float: right;
+	min-height: 22px;
+	min-width: 14px;
+}
+.mail-to > .mail-content > .mail-msg > p{
+    width: 100%;
+    float: left;
+    font-weight: 600;
+}
+.mail-to > .mail-content > .mail-times{
+    clear: both;
+    float: right;
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+}
+.mail-to > .mail-avatar{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 0;
+    vertical-align: top;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px){
+    .mail-container{
+        padding: 0 10px;
+    }
+}
+/* list mail of user css */
+.list-mail{
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.list-mail-item{
+    justify-content: space-between;
+    display: flex;
+    padding: 15px 10px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.list-mail-item:hover{
+    background-color: #eee;
+}
+.list-mail-item > .list-mail-avatar{
+    width: 70px;
+}
+.list-mail-item > .list-mail-avatar img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.list-mail-item > .list-mail-content{
+    width: calc(100% - 80px);
+    position: relative;
+}
+.list-mail-content .seen{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(33, 196, 101);
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 8pt;
+    line-height: 25px;
+    font-weight: 600;
+}
+.list-mail-item > .list-mail-content > a:hover{
+    color: #333;
+}
+.list-mail-item > .list-mail-content > a > .list-mail-user{
+    display: block;
+    font-size: 12pt;
+    font-weight: 700;
+}
+.list-mail-item > .list-mail-content > a > .list-mail-msg{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.list-mail-item > .list-mail-content > a > .list-mail-times{
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.list-mail-setting{
+    width: 100%;
+}
+.block{
+    background-color: #ff5159;
+    display: inline-block;
+    border-radius: 50%;
+    height:30px !important;
+    width: 30px;
+    line-height: 30px !important;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.block i{
+    text-align: center;
+    color: #fff;
+}
+.block:last-child{
+    background-color: rgb(62, 181, 236);
+}
+.block:hover{
+    background-color: rgb(155, 49, 49);
+}
+.block:last-child:hover{
+    background-color: rgb(29, 82, 107);
 }
 /* ==== footer === */
 .background-black{
