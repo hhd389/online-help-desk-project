@@ -20,7 +20,7 @@ img{
     --primary-color: #1664bd;
 	--success-color: #6ab04c;
 	--warning-color: #f0932b;
-	--danger-color: #eb4d4b;
+    --danger-color: #eb4d4b;
 }
 .primary-color{
     background: var(--primary-color) !important;
@@ -33,6 +33,12 @@ img{
 }
 .danger-color{
     background: var(--danger-color) !important;
+}
+.white-color{
+    background: #fff !important;
+    color: #ff3399 !important;
+    font-size: 20px;
+    border: 1px solid #ff3399
 }
 a{
     color: var(--main-color);
@@ -367,6 +373,9 @@ nav{
     }
     .navbar-expand{
         overflow-y: hidden;
+    }
+    .article-sticky{
+        display: none !important;
     }
 }
 /* =============grid column 12================ */
@@ -945,7 +954,7 @@ table{
     padding: 8px 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
     outline-color: royalblue;
     outline-width: 2px;
 }
@@ -1242,7 +1251,10 @@ select{
     vertical-align: top;
     background-size: cover;
 }
-
+.text-center{
+    display: block;
+    text-align: center;
+}
 @media only screen and (max-width: 768px){
     .mail-container{
         padding: 0 10px;
@@ -1339,11 +1351,82 @@ select{
 .block:last-child:hover{
     background-color: rgb(29, 82, 107);
 }
+/* ============ CSS FOR VIEW ARTICLE ================== */
+.article-sticky{
+    position: sticky;
+    top: 170px;
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    width: 40px;
+    height: 40px;
+    background: gray;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    margin: 5px 0;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.social:hover{
+    color: #fff;
+    transform: scale(1.5);
+    background: transparent !important;
+    color: #333;
+    border: none;
+}
+.form-sm{
+    width: 50%;
+    margin: 0 auto;
+}
+.accordion{
+    max-width: 600px;
+    padding: 20px;
+}
+.accordion-item{
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.item-header{
+    padding: 14px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.icon{
+    width: 28px;
+    height: 28px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 28px;
+}
+.text{
+    color: #888;
+    padding: 0 6px;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 14px;
+}
+.accordion-item.active .text{
+    max-height: 600px;
+    transition: .7s linear;
+}
 /* ==== footer === */
 .background-black{
     width: 100%;
     background: url('/images/bg.jpg');
-    padding: 70px 0;
+    padding: 50px 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -77,69 +77,48 @@
             <div class="background-overlay"></div>
             <div class="container">
                 <div class="background-title">
-                    <h2>Test đăng bài viết trên trang</h2>
+                    <h2>General Question</h2>
                     <p>
-                        <a href="">Home</a> / <a href="">View Post</a>
+                        <a href="">Home</a> / <a href="">Help</a>
                     </p>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h2>Test đăng bài viết trên trang</h2>
-                    <p>October 17, 2020</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="article-background">
-                    <img src="https://images.ctfassets.net/tfws0ki30xlo/3h0LVZqD1e8a6ceYAMy2S6/05382e38fca0944921f9eb763bae38ad/patreon-reward-ideas.jpg?w=1200&h=675&q=90&fm=webp&fit=thumb&f=top" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1 col-m-2">
-                    <div class="article-sticky">
-                        <a href="" class="social primary-color">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="" class="social danger-color">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
-                        <a href="" class="social white-color">
-                            <i class="far fa-heart"></i>
-                        </a>
-
+                <div class="form-sm">
+                    <div class="accordion-item">
+                        <div class="item-header">
+                            <h1 class="title">Design</h1>
+                            <div class="icon">+</div>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perehenderit, qui iste?</p>
                     </div>
-                </div>
-                <div class="col-11 col-m-10">
-                    <div class="article-content">
-                        Lorem ipsum dolor, sit amet consectetur ad
-                        ipisicing elit. Eligendi perferendis voluptatum blanditiis quod aliquid od
-                        io repudiandae mollitia enim inventore nemo at repellat nulla dolore rem ab aperiam,
-                         reprehenderit tempora aut!
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <img src="https://images.ctfassets.net/tfws0ki30xlo/3h0LVZqD1e8a6ceYAMy2S6/05382e38fca0944921f9eb763bae38ad/patreon-reward-ideas.jpg?w=1200&h=675&q=90&fm=webp&fit=thumb&f=top" alt="">
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         <img src="https://images.ctfassets.net/tfws0ki30xlo/3h0LVZqD1e8a6ceYAMy2S6/05382e38fca0944921f9eb763bae38ad/patreon-reward-ideas.jpg?w=1200&h=675&q=90&fm=webp&fit=thumb&f=top" alt="">
+                    <!-- item div -->
+                    <div class="accordion-item">
+                        <div class="item-header">
+                            <h1 class="title">Website</h1>
+                            <div class="icon">+</div>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perehenderit, qui iste?</p>
                     </div>
+                    <!-- item div -->
+                    <div class="accordion-item">
+                        <div class="item-header">
+                            <h1 class="title">Sections</h1>
+                            <div class="icon">+</div>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perehenderit, qui iste?</p>
+                    </div>
+                    <!-- item div -->
+                    <div class="accordion-item">
+                        <div class="item-header">
+                            <h1 class="title">Databases</h1>
+                            <div class="icon">+</div>
+                        </div>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perehenderit, qui iste?</p>
+                    </div>
+                    <!-- item div -->
                 </div>
             </div>
         </div>
@@ -160,6 +139,15 @@
                 $("html, body").animate({ scrollTop: 0 }, 800);
             });
      
+        });
+    </script>
+    <script>
+        $('.item-header').click(function()
+        {
+            $('.accordion-item').removeClass('active');
+            $(this).parent().addClass('active');
+            $('.icon').text('+');
+            $(this).children('.icon').text('-');
         });
     </script>
     <!-- footer -->
