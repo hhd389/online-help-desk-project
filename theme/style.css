@@ -1533,3 +1533,25 @@ select{
         height: 5rem;
     }
 }
+.article-header{
+    font-size: 2.6rem;
+    line-height: 1.8;
+}
+.article-span{
+    color: rgb(36, 30, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+.article-span span{
+    color: rgb(204, 204, 204);
+    font-size: 18px;
+    margin: 0 8px;
+}
+.article-span i{
+    color: #777;
+}
+.article-mg{
+    margin-bottom: 15px;
+}
